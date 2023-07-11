@@ -1,4 +1,4 @@
-{% set version = "1.3.2" %}
+{% set version = "1.3.4" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wdpar_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wdpar/wdpar_{{ version }}.tar.gz
-  sha256: 3364f02a448bda5effe413e7be6fa2152d53b876e29d0a52b442d066f6bbfe39
+  sha256: 222989a1ebd915fd59900cfb17a90fb5a55536e4b2212b397ba5eccabf7a68d9
 
 build:
   merge_build_host: true  # [win]
   skip: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -26,37 +26,37 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-rselenium >=1.7.4
     - r-assertthat >=0.2.0
     - r-cli >=1.0.1
     - r-countrycode >=1.1.0
     - r-curl >=3.2
     - r-httr >=1.3.1
     - r-lwgeom >=0.2_1
+    - r-pingr >=1.1.2
     - r-progress >=1.2.0
     - r-rappdirs >=0.3.1
     - r-sf >=1.0_2
     - r-sp
     - r-tibble >=2.1.3
-    - r-wdman >=0.2.4
-    - r-withr >=2.4.1
+    - r-webdriver >=1.0.6
+    - r-withr >=2.5.0
     - r-xml2 >=1.2.0
   run:
     - r-base
-    - r-rselenium >=1.7.4
     - r-assertthat >=0.2.0
     - r-cli >=1.0.1
     - r-countrycode >=1.1.0
     - r-curl >=3.2
     - r-httr >=1.3.1
     - r-lwgeom >=0.2_1
+    - r-pingr >=1.1.2
     - r-progress >=1.2.0
     - r-rappdirs >=0.3.1
     - r-sf >=1.0_2
     - r-sp
     - r-tibble >=2.1.3
-    - r-wdman >=0.2.4
-    - r-withr >=2.4.1
+    - r-webdriver >=1.0.6
+    - r-withr >=2.5.0
     - r-xml2 >=1.2.0
 
 test:
@@ -65,8 +65,8 @@ test:
     - "\"%R%\" -e \"library('wdpar')\""  # [win]
 
 about:
-  home: https://prioritizr.github.io/wdpar/, https://github.com/prioritizr/wdpar
-
+  home: https://prioritizr.github.io/wdpar/
+  dev_url: https://github.com/prioritizr/wdpar
   license: GPL-3.0-or-later
   summary: Fetch and clean data from the World Database on Protected Areas (WDPA). Data is obtained from Protected Planet <https://www.protectedplanet.net/en>.
   license_family: GPL3
