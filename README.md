@@ -9,7 +9,7 @@ About r-wdpar
 
 Home: https://prioritizr.github.io/wdpar/
 
-Package license: GPL-3.0-or-later
+Package license: GPL-3.0-only
 
 Summary: Fetch and clean data from the World Database on Protected Areas (WDPA). Data is obtained from Protected Planet <https://www.protectedplanet.net/en>.
 
@@ -20,7 +20,7 @@ About r-wdpar
 
 Home: https://prioritizr.github.io/wdpar/
 
-Package license: GPL-3.0-or-later
+Package license: GPL-3.0-only
 
 Summary: Fetch and clean data from the World Database on Protected Areas (WDPA). Data is obtained from Protected Planet <https://www.protectedplanet.net/en>.
 
