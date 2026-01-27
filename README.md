@@ -7,7 +7,7 @@ Home: https://prioritizr.github.io/wdpar/
 
 Package license: GPL-3.0-only
 
-Summary: Fetch and clean data from the World Database on Protected Areas (WDPA). Data is obtained from Protected Planet <https://www.protectedplanet.net/en>.
+Summary: Fetch and clean data from the World Database on Protected Areas (WDPA) and the World Database on Other Effective Area-Based Conservation Measures (WDOECM). Data is obtained from Protected Planet <https://www.protectedplanet.net/en>. To augment data cleaning procedures, users can install the 'prepr' R package (available at <https://github.com/prioritizr/prepr>). For more information on this package, see Hanson (2022) <doi:10.21105/joss.04594>.
 
 Development: https://github.com/prioritizr/wdpar
 
