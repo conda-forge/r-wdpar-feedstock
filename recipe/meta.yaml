@@ -22,6 +22,10 @@ build:
     - '*/Rblas.dll'    # [win]
     - '*/Rlapack.dll'  # [win]
 
+requirements:
+  build:
+    - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-archive >=1.1.10
